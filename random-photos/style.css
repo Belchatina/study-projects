@@ -13,11 +13,14 @@ h1 {
 }
 
 .image-container {
-  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 30px;
 }
 
 .image-container img {
-  margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px black;
   height: 300px;
