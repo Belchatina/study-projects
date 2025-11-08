@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Schoolbell&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Schoolbell', cursive;
+}
+
+.testimonial-container {
+  width: 90%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 100px;
+  background-color: bisque;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 70px 30px;
+  margin: 5px;
+  color: #5c4033;
+  position: relative;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev::before {
+  content: '‹';
+  color: #5c4033;
+}
+
+.next::before {
+  content: '›';
+  color: #5c4033;
+}
+
+.controls button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  height: 20px;
+}
+
+.controls button:hover {
+  cursor: pointer;
+}
