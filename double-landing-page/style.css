@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: fantasy;
+  overflow: hidden;
+  color: #0d1b2a;
+}
+
+p {
+  font-size: 80px;
+  backdrop-filter: brightness(80%);
+  letter-spacing: 4px;
+}
+
+.btn {
+  padding: 10px 2%;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid #0d1b2a;
+  color: #0d1b2a;
+  border-radius: 10px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10%;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-image: url('https://img.freepik.com/free-psd/beautiful-cat-portrait-isolated_23-2150186184.jpg?t=st=1762611736~exp=1762615336~hmac=5934a3e3f2b404b0ba903344d4bb2daa0695729f8d912540123b84f1d84b4765&w=1060');
+  background-size: cover;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-image: url('https://img.freepik.com/premium-photo/close-up-portrait-beautiful-gray-cat-with-yellow-eyes-domestic-cat-sitting-sofa_1048944-9116948.jpg?ga=GA1.1.613741152.1762612617&semt=ais_hybrid&w=740&q=80');
+  background-size: cover;
+}
+
+.active-left .left {
+  width: 60%;
+}
+
+.active-left .right {
+  width: 40%;
+}
+
+.active-right .right {
+  width: 60%;
+}
+
+.active-right .left {
+  width: 40%;
+}
