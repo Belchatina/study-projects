@@ -4,12 +4,16 @@ const secondsEl = document.getElementById('seconds');
 
 updateClock();
 
+function formatTime(num) {
+  return String(num).padStart(2, '0');
+}
+
 function updateClock() {
   const currentTime = new Date();
 
-  hoursEl.innerText = currentTime.getHours();
-  minutesEl.innerText = currentTime.getMinutes();
-  secondsEl.innerText = currentTime.getSeconds();
+  hoursEl.innerText = formatTime(currentTime.getHours());
+  minutesEl.innerText = formatTime(currentTime.getMinutes());
+  secondsEl.innerText = formatTime(currentTime.getSeconds());
 }
 
 setInterval(() => {
